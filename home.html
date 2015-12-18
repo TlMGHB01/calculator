@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script type="text/javascript"></script>
+    </head>
+    <body>
+<form>
+            <div id="digits">
+                <input id="N1" placeholder="Num 1" type="text">
+            </div>
+    <div class="butts">
+        <input class= "bttns" type="button" value="1" onclick="numberSelector(1)">
+        <input class= "bttns" type="button" value="2" onclick="numberSelector(2)">
+        <input class= "bttns" type="button" value="3" onclick="numberSelector(3)">
+        <input class= "opclrs" class= bttns type="button" value="+" onclick="addOperators('add')">
+        <!--<input class= bttns type="button" value="+" onclick="selectfirstnumber('hide')">-->
+
+    </div>
+
+    <div class="butts">
+        <input class= "bttns" type="button" value="4" onclick="numberSelector(4)">
+        <input class= "bttns" type="button" value="5" onclick="numberSelector(5)">
+        <input class= "bttns" type="button" value="6" onclick="numberSelector(6)">
+        <input class= "opclrs" class= "bttns" type="button" value="-" onclick="addOperators('subtract')">
+    </div>
+
+    <div class="butts">
+        <input class= "bttns" type="button" value="7" onclick="numberSelector(7)">
+        <input class= "bttns" type="button" value="8" onclick="numberSelector(8)">
+        <input class= "bttns" type="button" value="9" onclick="numberSelector(9)">
+        <input class= "opclrs" class= "bttns" type="button" value="x" onclick="addOperators('multiply')">
+    </div>
+
+
+    <div class="butts">
+        <input class= "bttns" type="button" value="." onclick="numberSelector('.')">
+        <input class= "bttns" type="button" value="0" onclick="numberSelector(0)">
+        <input class= "bttns" type="reset" value="C" onclick="cleer()">
+        <input class= "opclrs" class= "bttns" type="button" value="/" onclick="addOperators('divide')">
+    </div>
+
+    <div class="butts">
+        <input id="eql" type="button" value="=" onclick="equals()">
+    </div>
+
+</form>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
